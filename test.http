@@ -1,0 +1,25 @@
+###
+GET http://localhost:3000/cheeses/5
+
+###
+POST http://localhost:3000/cheeses
+content-type: application/json
+
+{
+  "name": "Cheddar",
+  "price": 12,
+  "description": "orange cheese"
+}
+
+###
+PATCH http://localhost:3000/cheeses/9
+content-type: application/json
+
+{
+  "name": "Montery Jack",
+  "price": 11,
+  "description": "orange and white cheese"
+}
+
+###
+DELETE http://localhost:3000/cheeses/7
